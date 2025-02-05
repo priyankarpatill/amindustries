@@ -213,7 +213,7 @@ body{
   }
   /*********************header_end****************/
   
-  /*********************center_home****************/
+  /*********************center_Home****************/
   .fade-carousel {
       position: relative;
       min-height: 600px;
@@ -327,7 +327,7 @@ body{
       background:#ed145b;
       border-color:#ed145b;
     }
-  /*********************center_home_end****************/
+  /*********************center_Home_end****************/
   
   /*********************albums****************/
   #albums{
@@ -478,12 +478,18 @@ footer {
 .service {
     width: 300px;
     text-align: center;
+     display: flex;
+    flex-direction: column;
 }
 
 .service img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    max-width: 300px; /* Sets a uniform max width for all images */
+    height: 200px; /* Sets a fixed height to ensure consistency */
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .service-btn {
@@ -495,6 +501,7 @@ footer {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    max-width: 300px; /* Matches image width */
 }
 
 .service-btn:hover {
@@ -719,13 +726,15 @@ footer {
   }
   
   .projects-section h2 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 38px;
     margin-bottom: 10px;
     color: #d90000; /* Matches the red theme from the example */
   }
   
   .projects-section p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 16px;
     color: #555;
     margin-bottom: 30px;
   }
@@ -831,13 +840,13 @@ footer {
 
   /*********************artist_end****************/
   
-  /*********************contact****************/
-  #contact{
+  /*********************Contact****************/
+  #Contact{
   padding-top:60px;
   padding-bottom:60px;
   background:#ed145b21; 
    }
-  .contact_1r .form-control{
+  .Contact_1r .form-control{
   height:50px;
   margin-bottom:20px;
   border:none;
@@ -846,10 +855,10 @@ footer {
   font-size:16px;
   border-bottom:3px solid #ed145b;
    }
-  .contact_1r .form_1{
+  .Contact_1r .form_1{
   height:150px; 
    }
-  .contact_1{
+  .Contact_1{
   margin-top:30px; 
    }
 
@@ -883,21 +892,21 @@ h1 .highlight {
 }
 
 /* Contact Wrapper */
-.contact-wrapper {
+.Contact-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 /* Left Side - Contact Form */
-.contact-form {
+.Contact-form {
   flex: 1;
   min-width: 300px;
   padding: 20px;
 }
 
-.contact-form input, 
-.contact-form textarea {
+.Contact-form input, 
+.Contact-form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -906,11 +915,11 @@ h1 .highlight {
   font-size: 16px;
 }
 
-.contact-form textarea {
+.Contact-form textarea {
   resize: none;
 }
 
-.contact-form button {
+.Contact-form button {
   width: 100%;
   background: red;
   color: white;
@@ -921,12 +930,12 @@ h1 .highlight {
   cursor: pointer;
 }
 
-.contact-form button:hover {
+.Contact-form button:hover {
   background: darkred;
 }
 
 /* Right Side - Contact Info */
-.contact-info {
+.Contact-info {
   flex: 1;
   min-width: 300px;
   padding: 20px;
@@ -934,29 +943,29 @@ h1 .highlight {
   border-radius: 8px;
 }
 
-.contact-info h2 {
+.Contact-info h2 {
   color: red;
 }
 
-.contact-info a {
+.Contact-info a {
   color: blue;
   text-decoration: none;
 }
 
-.contact-info .map {
+.Contact-info .map {
   margin-top: 15px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .contact-wrapper {
+  .Contact-wrapper {
       flex-direction: column;
   }
 }
 
 
 
-  /*********************contact_end****************/
+  /*********************Contact_end****************/
   #core-values {
     padding: 50px 0;
     background-color: #f9f9f9;
@@ -1228,7 +1237,7 @@ h1 .highlight {
   .artist_1i{
   margin-top:10px; 
    }
-  .contact_1r{
+  .Contact_1r{
   margin-top:10px;  
    }
   #footer{
