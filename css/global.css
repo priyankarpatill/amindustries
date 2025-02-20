@@ -301,7 +301,9 @@ body{
   .fade-carousel .slides .slide-2,
   .fade-carousel .slides .slide-3,
   .fade-carousel .slides .slide-4,
-  .fade-carousel .slides .slide-5 {
+  .fade-carousel .slides .slide-5,
+  .fade-carousel .slides .slide-6,
+  .fade-carousel .slides .slide-7{
     filter: brightness(1.1) contrast(1.1);
     min-height: 800px;
     background-size: cover;
@@ -311,19 +313,25 @@ body{
   image-rendering: crisp-edges; 
   }
   .fade-carousel .slides .slide-1 {
-       background-image: url(../img/photo-1470225620780-dba8ba36b745.avif);
+       background-image: url(../img/222222.webp);
   }
   .fade-carousel .slides .slide-2 {
     background-image: url(../img/009.jpg);
   }
   .fade-carousel .slides .slide-3 {
-    background-image: url(../img/009.jpg);
+    background-image: url(../img/hd\ image\ for\ home.avif);
   } 
   .fade-carousel .slides .slide-4 {
     background-image: url(../img/HomeBanner-Music-Opt-Upload.webp);
   }
   .fade-carousel .slides .slide-5 {
-    background-image: url(../img/7233574-uhd_2560_1080_25fps.mp4);
+    background-image: url(../img/111111design-home-theater-wallpaper-12a132e04d266eab5a48f215f098b9b2.jpg);
+  }
+  .fade-carousel .slides .slide-6 {
+    background-image: url(../img/33333istockphoto-105625925-2048x2048.jpg);
+  }
+  .fade-carousel .slides .slide-7 {
+    background-image: url(../img/Best-Speakers-for-Home-Theater.png);
   }
   
   #center .carousel-indicators{
@@ -592,7 +600,7 @@ footer {
 }
 
 .service-btn {
-    background-color: #ff0066;
+    background-color:black;
     color: white;
     border: none;
     padding: 10px;
