@@ -220,6 +220,8 @@ body{
   }
   .fade-carousel .carousel-inner .item {
       min-height: 600px;
+      /* transition: transform 2.5s ease-in-out !important;  */
+      /* Slows down slide transition */
   }
   .fade-carousel .carousel-indicators > li {
       margin: 0 4px;
@@ -297,21 +299,33 @@ body{
   /********************************/
   .fade-carousel .slides .slide-1, 
   .fade-carousel .slides .slide-2,
-  .fade-carousel .slides .slide-3 {
+  .fade-carousel .slides .slide-3,
+  .fade-carousel .slides .slide-4,
+  .fade-carousel .slides .slide-5 {
+    filter: brightness(1.1) contrast(1.1);
     min-height: 800px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    image-rendering: -webkit-optimize-contrast; /* Improves image clarity in WebKit browsers */
+  image-rendering: crisp-edges; 
   }
   .fade-carousel .slides .slide-1 {
-       background-image: url(../img/image7.png);
+       background-image: url(../img/photo-1470225620780-dba8ba36b745.avif);
   }
   .fade-carousel .slides .slide-2 {
     background-image: url(../img/009.jpg);
   }
   .fade-carousel .slides .slide-3 {
-    background-image: url(../img/blank-empty-cinema-theater-space-260nw-2500893543.jpg);
+    background-image: url(../img/009.jpg);
+  } 
+  .fade-carousel .slides .slide-4 {
+    background-image: url(../img/HomeBanner-Music-Opt-Upload.webp);
   }
+  .fade-carousel .slides .slide-5 {
+    background-image: url(../img/7233574-uhd_2560_1080_25fps.mp4);
+  }
+  
   #center .carousel-indicators{
     bottom:0;
     }
@@ -327,6 +341,91 @@ body{
       background:#ed145b;
       border-color:#ed145b;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Carousel Styling */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner .item {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+}
+
+.carousel-inner .item .video-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the entire slide */
+  z-index: -1; /* Places video behind the content */
+}
+
+.carousel-inner .item .hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1; /* Ensures text is above the video */
+}
+
+/* Overlay for better readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 0; /* Places overlay between video and text */
+}
+
+/* Slide Backgrounds */
+.slide-1 {
+  background: url('path-to-music-image.jpg') no-repeat center center/cover;
+}
+
+.slide-2 {
+  background: url('path-to-theater-image.jpg') no-repeat center center/cover;
+}
+
+.slide-3 {
+  background: url('path-to-film-image.jpg') no-repeat center center/cover;
+}
+
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .fade-carousel .slides .slide-1 {
+    background-image: url(../img/professional@2x.jpeg);
+  }
+  .fade-carousel .slides .slide-2 {
+    background-image: url(../img/009@2x.jpg);
+  }
+  .fade-carousel .slides .slide-3 {
+    background-image: url(../img/blank-empty-cinema-theater-space-260nw-2500893543@2x.jpg);
+  }
+  .fade-carousel .slides .slide-4 {
+    background-image: url(../img/theaters-interior-design-home-cinema-wallpaper-preview@2x.jpg);
+  }
+}
   /*********************center_Home_end****************/
   
   /*********************albums****************/
