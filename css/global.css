@@ -303,7 +303,10 @@ body{
   .fade-carousel .slides .slide-4,
   .fade-carousel .slides .slide-5,
   .fade-carousel .slides .slide-6,
-  .fade-carousel .slides .slide-7{
+  .fade-carousel .slides .slide-7,
+  .fade-carousel .slides .slide-8,
+  .fade-carousel .slides .slide-9,
+  .fade-carousel .slides .slide-10{
     filter: brightness(1.1) contrast(1.1);
     min-height: 800px;
     background-size: cover;
@@ -316,13 +319,15 @@ body{
        background-image: url(../img/222222.webp);
   }
   .fade-carousel .slides .slide-2 {
-    background-image: url(../img/009.jpg);
+    background-image: url(../img/Best-Speakers-for-Home-Theater.png);
+
   }
   .fade-carousel .slides .slide-3 {
-    background-image: url(../img/hd\ image\ for\ home.avif);
+    background-image: url(../img/009.jpg);
   } 
   .fade-carousel .slides .slide-4 {
-    background-image: url(../img/HomeBanner-Music-Opt-Upload.webp);
+    background-image: url(../img/McIntosh\ Westchester\ IV\ Home\ Theater\ System.jpg);
+    
   }
   .fade-carousel .slides .slide-5 {
     background-image: url(../img/111111design-home-theater-wallpaper-12a132e04d266eab5a48f215f098b9b2.jpg);
@@ -331,7 +336,16 @@ body{
     background-image: url(../img/33333istockphoto-105625925-2048x2048.jpg);
   }
   .fade-carousel .slides .slide-7 {
-    background-image: url(../img/Best-Speakers-for-Home-Theater.png);
+    background-image: url(../img/McIntosh\ Westchester\ I\ Home\ Theater\ System\ 01.jpg);
+  }
+  .fade-carousel .slides .slide-8 {
+    background-image: url(../img/MHT300\ Lifestyle\ 1\ -\ Living\ Room.jpg);
+  }
+  .fade-carousel .slides .slide-9 {
+    background-image: url(../img/McIntosh\ Westchester\ I\ Home\ Theater\ System\ 02.jpg);
+  }
+  .fade-carousel .slides .slide-10 {
+    background-image: url(../img/HomeBanner-Music-Opt-Upload.webp);
   }
   
   #center .carousel-indicators{
@@ -419,7 +433,7 @@ body{
 }
 
 
-
+/* 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .fade-carousel .slides .slide-1 {
     background-image: url(../img/professional@2x.jpeg);
@@ -433,7 +447,7 @@ body{
   .fade-carousel .slides .slide-4 {
     background-image: url(../img/theaters-interior-design-home-cinema-wallpaper-preview@2x.jpg);
   }
-}
+} */
   /*********************center_Home_end****************/
   
   /*********************albums****************/
